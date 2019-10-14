@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="vn" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <title th:text="#{login.title}"></title>
 </head>
 <body>
 <h1 th:text="#{login.head}"></h1>
 </body>
-Language: <a href="?lang=en">English</a> | <a href="?lang=vn">Việt Nam</a>
+Language: <a href="?lang=en">English</a> | <a href="?lang=vn"> Việt Nam</a>
 <form th:action="@{/login}" th:object="${credential}" method="post">
 
     <label th:text="#{login.userName_label}"></label>
